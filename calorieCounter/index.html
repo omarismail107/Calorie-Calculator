@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>
+        Calorie Calculator
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calorie Calculator</h1>
+
+        <input class="gender" type="radio" name="user_gender" id="male">
+        <label class="gender" for="male">Male</label>
+
+        <input class="gender" type="radio" name="user_gender" id="female">
+        <label class="gender" for="female">Female</label>
+
+        <br><br><br>
+
+        <input type="number" class=box id="age" placeholder=Age>
+
+        <input type="number" class=box id="weight" placeholder="Weight">
+        <span class=poundsSpan>lbs</span>
+
+        <br><br><br>
+
+        <select class=heightClass name="heightInFeet" id="feet">
+            <optgroup>
+                <option disabled selected>Height Ft.</option>
+                <option value="3ft">3</option>
+                <option value="4ft">4</option>
+                <option value="5ft">5</option>
+                <option value="6ft">6</option>
+                <option value="7ft">7</option>
+                <option value="8ft">8</option>
+            </optgroup>
+
+        </select>
+        <span class="heightSpan">ft</span>
+
+        <select class=heightClass name="heightInInches" id="inches">
+            <optgroup>
+                <option disabled selected>In.</option>
+                <option value="0in">0</option>
+                <option value="1in">1</option>
+                <option value="2in">2</option>
+                <option value="3in">3</option>
+                <option value="4in">4</option>
+                <option value="5in">5</option>
+                <option value="6in">6</option>
+                <option value="7in">7</option>
+                <option value="8in">8</option>
+                <option value="9in">9</option>
+                <option value="10in">10</option>
+                <option value="11in">11</option>
+            </optgroup>
+        </select>
+        <span class="heightSpan">in</span>
+        <br><br>
+
+        <h2>How Active Are You?</h2>
+        <input class="activityLevel" type="radio" name="activityLevel" id="Sedentary">
+        <label class="activityLevel" for="Sedentary">Sedentary</label>
+
+        <input class="activityLevel" type="radio" name="activityLevel" id="Light">
+        <label class="activityLevel" for="Light">Light</label>
+        <br><br><br>
+
+        <input class="activityLevel" type="radio" name="activityLevel" id="Moderate">
+        <label class="activityLevel" for="Moderate">Moderate</label>
+
+        <input class="activityLevel" type="radio" name="activityLevel" id="Active">
+        <label class="activityLevel" for="Active">Active</label>
+        <br><br><br>
+
+        <input class="activityLevel" type="radio" name="activityLevel" id="veryActive">
+        <label class="activityLevel" for="veryActive">Very Active</label>
+
+        <input class="activityLevel" type="radio" name="activityLevel" id="extraActive">
+        <label class="activityLevel" for="extraActive">Extra Active</label>
+
+        <br><br><br>
+        <button class="calculateCalories"> Calculate </button>
+
+        <div id="content">
+            <p>
+
+            </p>
+        </div>
+
+    </div>
+    <!--- end of container --->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
